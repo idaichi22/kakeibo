@@ -16,7 +16,7 @@ public class ListGetter {
 		
 		try {
 			Class.forName("org.postgresql.Driver");
-			conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "wa2e6ay8");
+			conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "test");
 			
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery("select * from testtable");
